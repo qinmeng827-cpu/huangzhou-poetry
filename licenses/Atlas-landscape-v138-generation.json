@@ -1,0 +1,15 @@
+{
+  "version": "v138",
+  "date": "2026-10-05",
+  "tool": "built-in image_gen",
+  "intent": "Generate a brand-new landscape background for the geographic atlas; artwork is decorative, not geographic data.",
+  "prompt": "Use case: historical-scene / stylized-concept. Asset type: a finished background painting asset for an existing Chinese cultural website, NOT a website mockup. Create ONE brand-new exceptionally refined panoramic Chinese shanshui ink-and-light-mineral-color painting, wide 2:1 landscape composition, ideally 2560 by 1280 pixels. Its purpose is to enrich the left and right margins around a centered map and a paper information panel. Art direction: restrained Song-dynasty landscape album atmosphere, hand-painted fine broken ink strokes, soft weathered warm ivory silk/paper, pale ochre rocks, muted blue-grey distant ridges, grey-green pine foliage, subtle river haze. Composition is critical: the LEFT OUTERMOST 0–16% contains a graceful staggered rocky riverbank, a few wind-shaped pines and distant low mountains; the RIGHT OUTERMOST 84–100% contains an asymmetrical gentler bank, sparse pine branches and faint distant mountain silhouettes. Both side landscapes grow organically from the lower corners, with layered depth and delicate details; their inner edges dissolve naturally into mist. The entire CENTRAL 18–82% must remain mostly luminous, quiet, warm ivory mist and extremely pale open river, almost blank, with no dominant mountain peaks, dark objects or decorative marks. Keep the upper central area blank too. Low-contrast distant ridgelines may connect both edges very faintly near the bottom, leaving the middle open. The scene should feel like a single continuous painted landscape, not two separate pasted side panels and not a hard blank rectangle. The left and right balance should be asymmetric but harmonious. Include enough beautiful painterly detail in the outer margins to be visibly interesting at full browser width, while keeping their ink values subdued and elegant. Subtle authentic-looking paper fibers only, clean and softly warm overall; no yellow stains, grunge, burnt edges or strong texture. Avoid photorealistic sunset, strong orange highlights, high saturation, 3D/game rendering, artificial fog blobs, repeated stock motifs, large waterfalls, dense forests, prominent buildings or people. ABSOLUTELY NO text, calligraphy, poem, title, seals, stamp, watermark, borders, frames, map, user interface, buttons, screenshots or logos. Opaque warm-paper background.",
+  "variants": 1,
+  "transparent_background": false,
+  "files": {
+    "original": "landscape-source.png",
+    "web": "landscape-web.webp"
+  },
+  "status": "Integrated as the geographic atlas backdrop.",
+  "generated_artifact": "exec-1570f771-8c46-4beb-9656-8e9a83e7219c.png"
+}
