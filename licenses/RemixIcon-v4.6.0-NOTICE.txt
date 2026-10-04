@@ -1,0 +1,4 @@
+Selected icons from Remix Icon v4.6.0 by Remix Design.
+Source: https://github.com/Remix-Design/RemixIcon/tree/v4.6.0
+License: Apache License 2.0; see LICENSE-Apache-2.0.txt.
+Original icon paths retained. Inline aria/display attributes and CSS color/size adapted for this website.

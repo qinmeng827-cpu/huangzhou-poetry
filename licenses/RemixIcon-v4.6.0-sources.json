@@ -1,0 +1,100 @@
+{
+  "date": "2026-10-05",
+  "project": "Remix Icon",
+  "author": "Remix Design",
+  "version": "v4.6.0",
+  "license": "Apache-2.0",
+  "license_url": "https://github.com/Remix-Design/RemixIcon/blob/v4.6.0/License",
+  "license_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+  "adaptation": "Original SVG files unchanged; rendered inline with aria-hidden, focusable=false and a CSS class. CSS applies currentColor, size and optical alignment.",
+  "icons": [
+    {
+      "id": "map",
+      "local": "map.svg",
+      "url": "https://github.com/Remix-Design/RemixIcon/blob/v4.6.0/icons/Map/map-2-line.svg",
+      "bytes": 475,
+      "sha256": "aa56c1cbed2d30a8d54f2a6f0d5d52c031d02f9099d182b1706a7b0b2f74965b",
+      "git_blob": "508c6580ac94bd8b655fcf43bd8505511e5450ef"
+    },
+    {
+      "id": "pavilion",
+      "local": "pavilion.svg",
+      "url": "https://github.com/Remix-Design/RemixIcon/blob/v4.6.0/icons/Buildings/ancient-pavilion-line.svg",
+      "bytes": 802,
+      "sha256": "d6fcae6647642f132e34e055b224121198b0eb2af6b3e24b222237a8fc1f7233",
+      "git_blob": "ef7e6b88184105abd362814c4651bd0dbc6317bb"
+    },
+    {
+      "id": "compass",
+      "local": "compass.svg",
+      "url": "https://github.com/Remix-Design/RemixIcon/blob/v4.6.0/icons/Map/compass-3-line.svg",
+      "bytes": 483,
+      "sha256": "879929ca0c43fdae9908c541d55fbeda68c144076c807b9829b1647aa492842b",
+      "git_blob": "fcae9f379571080a07e467de339f5428c4f3cc41"
+    },
+    {
+      "id": "focus",
+      "local": "focus.svg",
+      "url": "https://github.com/Remix-Design/RemixIcon/blob/v4.6.0/icons/Design/focus-3-line.svg",
+      "bytes": 599,
+      "sha256": "f28664fdc22722960be7ca17ce8376c98e61498d04b7ecfa062fd63e4578a1a9",
+      "git_blob": "23855bb19b279b08fc9aafd6d7ccbd03a6b2d10d"
+    },
+    {
+      "id": "zoom-in",
+      "local": "zoom-in.svg",
+      "url": "https://github.com/Remix-Design/RemixIcon/blob/v4.6.0/icons/System/zoom-in-line.svg",
+      "bytes": 524,
+      "sha256": "ca0bd2aa82282a71997ab496944d46b95c085a930dd7ff1e74b22070ec79419b",
+      "git_blob": "11a76f1c659848282814c233f29c6e644d5b5eb4"
+    },
+    {
+      "id": "zoom-out",
+      "local": "zoom-out.svg",
+      "url": "https://github.com/Remix-Design/RemixIcon/blob/v4.6.0/icons/System/zoom-out-line.svg",
+      "bytes": 500,
+      "sha256": "da1872991daecae6be3c21e89ce791e5cd97f67d3520c19c0eab05d75b1dad6d",
+      "git_blob": "8dc66c2d6e3a757dcfa15acda8d5ac702983abb4"
+    },
+    {
+      "id": "paper",
+      "local": "paper.svg",
+      "url": "https://github.com/Remix-Design/RemixIcon/blob/v4.6.0/icons/Document/file-paper-2-line.svg",
+      "bytes": 383,
+      "sha256": "071255df42ab033c7bbf9f9de76cba7bf0ebcd6375f3e6972f8b966cb2e6f983",
+      "git_blob": "98fcb84c100947b356486f3840b7915c56b6f93c"
+    },
+    {
+      "id": "book",
+      "local": "book.svg",
+      "url": "https://github.com/Remix-Design/RemixIcon/blob/v4.6.0/icons/Document/book-open-line.svg",
+      "bytes": 387,
+      "sha256": "b3222fd517447be71f4ffd478ac29f89fd382c307200aeff8f9f5ff1dfaaf74d",
+      "git_blob": "5e07c2b174a551201559cb2a088781f3cd2bdb93"
+    },
+    {
+      "id": "download",
+      "local": "download.svg",
+      "url": "https://github.com/Remix-Design/RemixIcon/blob/v4.6.0/icons/System/download-2-line.svg",
+      "bytes": 212,
+      "sha256": "4fa3657656589ab193548fce4f170dac76e3dce114ae688fa0c6c81685bd198d",
+      "git_blob": "63462906b331515155b6e94dc45858df2978cc85"
+    },
+    {
+      "id": "close",
+      "local": "close.svg",
+      "url": "https://github.com/Remix-Design/RemixIcon/blob/v4.6.0/icons/System/close-line.svg",
+      "bytes": 307,
+      "sha256": "db3b4dcebb2d962a0231a191538bf6939620798b18f0ba52d4b91c5a4649ce54",
+      "git_blob": "4ee8e56f2825a8ef49da261c9fe088b8335d8fc3"
+    },
+    {
+      "id": "grid",
+      "local": "grid.svg",
+      "url": "https://github.com/Remix-Design/RemixIcon/blob/v4.6.0/icons/Design/grid-line.svg",
+      "bytes": 370,
+      "sha256": "d4b9464af308d169dc9e866d50f2471d2d27b78377352d673b254090abdc47a5",
+      "git_blob": "d7de8ceebde4ee9226e81b0c7d0aa4175045deb6"
+    }
+  ]
+}
