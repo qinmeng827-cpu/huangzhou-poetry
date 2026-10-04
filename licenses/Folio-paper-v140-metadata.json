@@ -1,0 +1,23 @@
+{
+  "version": "v140",
+  "date": "2026-10-05",
+  "conversion": "WebP quality 90; no resizing, compositing or image content edits after image_gen.",
+  "files": [
+    {
+      "file": "song-landscape-paper.png",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 2921439,
+      "sha256": "f2050bdcc2f8d73b95c6ed58ff4184fd8fb4d89f59f333553ff8d46011b7d6d2",
+      "hasAlpha": false
+    },
+    {
+      "file": "song-landscape-paper.webp",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 334084,
+      "sha256": "33dcc899266a3ffcb4c2540c84ecab345fbc0b72ea8ff2cbb7bcb6a0648621fc",
+      "hasAlpha": false
+    }
+  ]
+}

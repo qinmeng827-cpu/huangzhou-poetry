@@ -1,0 +1,15 @@
+{
+  "version": "v140",
+  "date": "2026-10-05",
+  "tool": "built-in image_gen",
+  "intent": "historical-scene",
+  "status": "Integrated as the atlas paper background and research page landscape wash.",
+  "prompt": "Use case: historical-scene. Asset type: an entire decorated antique Chinese album paper background for a Song-aesthetic website sidebar, PORTRAIT aspect ratio about 2:3, high-quality detailed raster artwork. Create ONE seamless-feeling pale ivory rice-paper sheet with a Chinese ink landscape painted directly into its fibres, NOT a framed painting pasted onto paper. The whole canvas is the same soft warm paper, subtle fibres and tiny natural tonal variations, approximate base colour #f7f1e5, not brown/yellow weathered. Composition: the upper 55 percent is a calm, very pale paper field for a website's dark text; fine washed cloud/mist ribbons and a few very faint ridge contours may gently touch the outer margins. The lower 45 percent is richly composed but quiet Song landscape: overlapping blue-grey and warm grey mountains receding into mist, a winding open river, naturally weathered bank rocks, a few elegant sparse pines, reeds along the water, a tiny distant boat for scale. The strongest, finely drawn details concentrate at the lower-left bank and lower-right foothills; a softer distant ridge crosses the centre so the landscape still reads in a narrow crop. Keep the central river luminous with a few restrained ink water lines, not a big empty blank patch. Mountain contours, pine needles and rocks should have exquisite fine brush linework and restrained dry-ink textures, inspired by restrained Song album landscape painting. Warm-grey, pale stone-green, subdued ochre; matte and delicate. Moderate visible ink contrast in the bottom third, gently feathering into paper and dissipating upwards with natural irregular mist boundaries. Pigment appears absorbed by the paper, paper grain runs through the artwork. No hard rectangular image edge, no miniature artwork, no separate border, no frame, no seal, no text, no calligraphy, no UI, no people close-up, no repeated decorative stamps, no modern vector clipart, no 3D render, no heavy black mountains. Every corner belongs to the same paper sheet. This will fill a real paper sidebar rather than serve as an illustration card.",
+  "generated_artifact": "exec-2a27eb24-2493-41c3-a055-de337ab38689.png",
+  "provenance": "Newly generated project decoration inspired by restrained Song landscape aesthetics. It is not a scanned historical painting or geographic evidence. No external painting is used in the final v140 paper.",
+  "adaptation": "WebP encoding only; original 1024×1536 composition and dimensions preserved. Landscape and paper were generated together, with no pasted inset. UI uses CSS backgrounds, controlled opacity and legibility gradients. Three-dimensional assets, geographic data and scene logic remain unchanged.",
+  "files": {
+    "original": "song-landscape-paper.png",
+    "web": "song-landscape-paper.webp"
+  }
+}
