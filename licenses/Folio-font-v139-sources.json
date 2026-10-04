@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-05",
+  "upstream": "https://github.com/adobe-fonts/source-han-serif",
+  "license": "SIL Open Font License 1.1",
+  "source": "assets/ui/fonts-v125/SourceHanSerifSC-Regular.otf",
+  "source_sha256": "78aa7a328fd974df2d688c8a9fd74a33d8334dfa84ab24d9d11efb2ffc464117",
+  "source_version": "Version 2.003;hotconv 1.1.1;makeotfexe 2.6.0",
+  "internal_family": "HuangzhouFolioSong",
+  "file": "huangzhou-folio-regular.woff2",
+  "bytes": 335048,
+  "sha256": "1c9de779d17e18341f3c4e5dd2a72dc1ada228e41feebbcb84799f7ad63d2967",
+  "characters": 817,
+  "glyphs": 1779,
+  "weight": 400,
+  "character_sources": [
+    "src/review.html",
+    "src/review.js",
+    "src/evidence-view.js",
+    "src/folio.css",
+    "src/atlas-view.js",
+    "src/longwang-ridge.js",
+    "data/study-data.json",
+    "output/map-study/01-geographic-base.svg"
+  ],
+  "scope": "Geographic atlas and research UI only; header, 3D scene and poetry fonts unchanged.",
+  "method": "Subset original outlines, retain layout forms, rename derived family per OFL; no glyph redrawing."
+}

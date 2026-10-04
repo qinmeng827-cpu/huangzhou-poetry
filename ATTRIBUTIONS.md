@@ -14,3 +14,6 @@
 项目原创内容及用户提供视频的权利归各自权利人，本发布包没有将全部内容授予开源许可。
 
 - 地理参照页山水衬景：2026-10-05 使用内置 image_gen 新生成的项目装饰画，不是古画扫描或地理底图；完整提示词见 licenses/Atlas-landscape-v138-generation.json。
+
+- 地理参照与寻迹考证页的册页点景：南宋《白梅与禽》，Cleveland Museum of Art，1985.371，CC0；https://www.clevelandart.org/art/1985.371 。使用官方开放图像的 WebP 编码副本，画面与比例保留，仅网页展示缩放；不是黄州地点的图像证据。馆藏印章和后世装裱不作为北宋原制依据。来源与适配记录见 licenses/Song-album-v139-*。
+- 两页的正文宋体：Source Han Serif SC 2.003 / Adobe，SIL OFL 1.1；保留原字形，制作按页面字集裁减的 WOFF2，并将派生字体更名为 HuangzhouFolioSong。记录见 licenses/Folio-font-v139-sources.json。

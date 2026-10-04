@@ -1,0 +1,23 @@
+{
+  "purpose": "Design reference and candidate decorative album leaf; not integrated into website",
+  "verified_at": "2026-10-05",
+  "institution": "Cleveland Museum of Art",
+  "title": "Bird on a Flowering Branch",
+  "title_zh": "白梅與禽",
+  "accession_number": "1985.371",
+  "object_id": 152556,
+  "period": "Southern Song dynasty (1127–1279)",
+  "date": "1100s",
+  "license": "CC0",
+  "object_url": "https://www.clevelandart.org/art/1985.371",
+  "license_url": "https://www.clevelandart.org/open-access",
+  "metadata_api": "https://openaccess-api.clevelandart.org/api/artworks/?accession_number=1985.371",
+  "image_url": "https://openaccess-cdn.clevelandart.org/1985.371/1985.371_web.jpg",
+  "local_file": "southern-song-plum-bird-1985-371.jpg",
+  "width": 900,
+  "height": 887,
+  "bytes": 406234,
+  "sha256": "f61c7011eff77b40231dbe53fe65162e593f2391849f805d474298fb9cb8988e",
+  "adaptation": "Unmodified museum web image; no cropping, recoloring or tracing performed",
+  "note": "The painting is Southern Song; museum description identifies an upper-left collector seal as Yuan dynasty. Do not present all seals or the later mounting as original Song components."
+}
