@@ -1,4 +1,4 @@
 const response=await fetch(new URL('./site-data.b7d44806f6566944.json',import.meta.url));
 if(!response.ok)throw Error('Website data could not be loaded: '+response.status);
 Object.assign(window,await response.json());
-await import('./app.a7d74fd430e413ff.js');
+await import('./app.ca30f52ff53456e9.js');

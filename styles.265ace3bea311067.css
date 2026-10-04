@@ -146,37 +146,105 @@ nav{flex:none;margin:0}
  .view{scroll-margin-top:120px}
 }
 
-/* One atlas entry, with composition and geographic reference in the same frame. */
-#base{padding:28px 3.2vw 36px}
-.base-study-head{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:22px}
-.base-study-head h1{font:28px/1.3 var(--serif);letter-spacing:4px;margin:0;font-weight:normal}
-.base-study-switch{display:flex;gap:20px;border-bottom:1px solid #a9987b40}
-.base-study-switch button{font:16px/1.5 var(--serif);letter-spacing:1px;padding:6px 0 9px;border:0;border-bottom:1px solid transparent;background:transparent;color:#6b6d5c;white-space:nowrap}
+/* v136: maps fill one viewport; notes stay in their own drawer. */
+.atlas-sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+body.is-atlas>footer{display:none}
+#base{height:calc(100svh - 108px);min-height:0;padding:14px 3.2vw 9px}
+#base.view.active{display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:12px}
+.base-study-head{display:flex;align-items:center;justify-content:space-between;gap:24px;min-width:0}
+.base-study-switch{display:flex;gap:25px;border-bottom:1px solid #a9987b40;flex:none}
+.base-study-switch button{font:17px/1.5 var(--serif);letter-spacing:2px;padding:6px 0 9px;border:0;border-bottom:1px solid transparent;background:transparent;color:#6b6d5c;white-space:nowrap}
 .base-study-switch button[aria-pressed=true]{color:var(--red);border-bottom-color:#a66852}
 .base-study-switch button:hover{color:var(--red)}
-#base .board-frame{padding:0;border:1px solid #a9987b40;background:#eee6d4}
-.base-study-foot{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;padding-top:16px}
-.base-study-foot p{margin:0;font:13px/1.8 var(--serif);color:var(--muted)}
-.base-downloads{flex:none;max-width:100%;font:14px/1.8 var(--serif);color:#68624f}
-.base-downloads summary{cursor:pointer;list-style:none;text-align:right;white-space:nowrap}
-.base-downloads summary:after{content:'⌄';font-size:11px;margin-left:8px}
-.base-downloads[open] summary:after{content:'⌃'}
-.base-download-links{display:flex;flex-direction:column;gap:5px;margin-top:10px;border-left:1px solid #a9987b60;padding-left:16px}
-.base-download-links a{color:inherit;text-decoration:none}
+.atlas-tools{display:flex;align-items:center;gap:3px;flex-wrap:wrap;justify-content:flex-end}
+.atlas-tools button{font:14px/1.4 var(--serif);border:0;background:transparent;padding:8px 12px;min-height:36px;color:#5c6658}
+.atlas-tools button:hover,.atlas-panel button:hover{color:var(--red);background:#b99b7218}
+.atlas-tools button:disabled{opacity:.35;cursor:default}
+#atlas-panel-toggle{border-left:1px solid #a9987b50;margin-left:8px}
+.atlas-workspace{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:25px;min-height:0;min-width:0;position:relative}
+.atlas-panel-hidden .atlas-workspace{grid-template-columns:minmax(0,1fr)}
+.atlas-viewport{position:relative;min-width:0;min-height:0;overflow:hidden;border:1px solid #a9987b65;background:#eee7d7;isolation:isolate;touch-action:none;outline-offset:-3px}
+.atlas-viewport:before{content:'';position:absolute;inset:0;background:url('./assets/paper-font-1.01c8c7b92eab1634.webp') center/160px 160px;opacity:.15;pointer-events:none;z-index:-1}
+#atlas-svg,.atlas-fallback{position:absolute;inset:0;width:100%;height:100%}
+#atlas-svg svg{width:100%;height:100%;display:block}
+.atlas-fallback{object-fit:contain}
+.atlas-fallback[hidden]{display:none}
+.atlas-viewport.is-zoomed{cursor:grab}
+.atlas-viewport.is-zoomed:active{cursor:grabbing}
+#atlas-pins{position:absolute;inset:0;pointer-events:none}
+.atlas-marker{position:absolute;width:24px;height:24px;margin:-12px 0 0 -12px;pointer-events:auto;border:0;background:transparent;padding:0;border-radius:50%;z-index:1}
+.atlas-marker[hidden]{display:none}
+.atlas-marker:before{content:'';position:absolute;width:7px;height:7px;border-radius:50%;left:8.5px;top:8.5px;background:#984f3b;border:1px solid #f2e6cf;box-shadow:0 0 0 1px #8f503a35}
+.atlas-marker:hover,.atlas-marker:focus-visible,.atlas-marker[aria-pressed=true]{z-index:3}
+.atlas-marker:hover:before,.atlas-marker[aria-pressed=true]:before{width:10px;height:10px;left:7px;top:7px;background:#98412f}
+.atlas-place-label{position:absolute;left:50%;bottom:calc(100% + 2px);padding:5px 9px;background:#f7efdeeb;border:1px solid #a38c6a70;font:15px/1.5 var(--serif);color:#37483e;white-space:nowrap;pointer-events:none;opacity:0;transform:translate(-50%,3px);transition:opacity .25s ease,transform .25s ease}
+.atlas-marker:hover .atlas-place-label,.atlas-marker:focus-visible .atlas-place-label,.atlas-marker[aria-pressed=true] .atlas-place-label{opacity:1;transform:translate(-50%,0)}
+.atlas-marker.label-left .atlas-place-label{left:auto;right:0;transform:translate(0,3px)}
+.atlas-marker.label-left:hover .atlas-place-label,.atlas-marker.label-left:focus-visible .atlas-place-label,.atlas-marker.label-left[aria-pressed=true] .atlas-place-label{transform:translate(0,0)}
+.atlas-marker.label-below .atlas-place-label{bottom:auto;top:100%}
+.atlas-north{position:absolute;top:16px;right:18px;pointer-events:none;font:15px/1.5 var(--serif);color:#5f6d5b;background:#f2e9d6b8;padding:3px 7px;z-index:4}
+.atlas-scale{position:absolute;bottom:15px;left:18px;pointer-events:none;display:flex;flex-direction:column;align-items:center;gap:4px;background:#f2e9d6b8;padding:6px 9px;font:11px/1.3 var(--serif);color:#586452;z-index:4}
+#atlas-scale-line{display:block;height:5px;border:1px solid #66705b;border-top:0}
+#atlas-load-status{position:absolute;inset:45% 16px auto;text-align:center;font:15px/1.8 var(--serif);background:#f4ecdde8;z-index:5;padding:12px;margin:0}
+#atlas-retry{position:absolute;top:calc(45% + 64px);left:50%;transform:translateX(-50%);font:14px var(--serif);border:1px solid #a9987b;background:#f4ecdd;padding:8px 16px;z-index:5}
+.atlas-panel{position:relative;min-width:0;min-height:0;padding:0!important;border-left:1px solid #a9987b45;overflow:auto;scrollbar-width:thin;scrollbar-color:#a9987b70 transparent}
+.atlas-panel[hidden]{display:none!important}
+.atlas-panel-content{padding:15px 10px 14px 22px}
+#atlas-panel-close{position:absolute;right:7px;top:0;font:23px var(--serif);border:0;background:transparent;padding:3px 7px;color:#7e755e}
+.atlas-panel h2,.atlas-site>label{display:block;font:18px/1.5 var(--serif);font-weight:normal;color:#364e40;letter-spacing:2px;margin:0 0 16px}
+.atlas-legend ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:13px 9px;font:13px/1.5 var(--serif);color:#67705e}
+.atlas-legend li{display:flex;align-items:center;gap:9px;white-space:nowrap}
+.atlas-legend i{display:inline-block;flex:none;width:14px;height:10px}
+.atlas-key-water{background:#6b8886;border-bottom:1px solid #d9cdb2}
+.atlas-key-terrain{background:#9fad8b;opacity:.7}
+.atlas-key-road{height:0!important;border-top:1px solid #b0aa94}
+.atlas-key-place{width:7px!important;height:7px!important;border-radius:50%;background:#984f3b;margin:0 3.5px}
+#base[data-atlas-mode=geography] .atlas-key-water{background:#a7c1c5}
+#base[data-atlas-mode=geography] .atlas-key-terrain{background:#cbd2bf}
+#base[data-atlas-mode=geography] .atlas-key-road{border-color:#aab6ab}
+.atlas-panel button{font:14px/1.5 var(--serif);border:0;background:transparent;color:#6b6552;padding:6px 0;cursor:pointer}
+#atlas-grid-toggle{margin-top:15px;border-bottom:1px solid #a9987b70}
+#atlas-grid-toggle[aria-pressed=true]{color:var(--red)}
+.atlas-site{margin-top:28px;padding-top:23px;border-top:1px solid #a9987b45}
+#atlas-place-picker{max-width:100%;width:100%;padding:9px 3px;background:transparent;border:0;border-bottom:1px solid #a9987b70;border-radius:0;font:14px/1.5 var(--serif);color:#4f604f}
+#atlas-selection h2{font-size:20px;letter-spacing:1px;margin:20px 0 8px}
+.atlas-panel p{font:13px/1.85 var(--serif);color:#68725f;margin:12px 0;overflow-wrap:anywhere}
+#atlas-explore{font-size:15px;color:#8e4937;border-bottom:1px solid #aa735380}
+.atlas-notes,.base-downloads{font:14px/1.8 var(--serif);color:#68624f;border-top:1px solid #a9987b45;padding-top:12px;margin-top:22px}
+.atlas-notes summary,.base-downloads summary{cursor:pointer;list-style:none;white-space:nowrap;padding:4px 0}
+.atlas-notes summary:after,.base-downloads summary:after{content:'⌄';font-size:11px;margin-left:8px}
+.atlas-notes[open] summary:after,.base-downloads[open] summary:after{content:'⌃'}
+.base-downloads{margin-top:12px}
+.base-download-links{display:flex;flex-direction:column;gap:7px;margin:12px 0 0}
+.base-download-links a{color:inherit;text-decoration:none;font-size:13px}
 .base-download-links a:hover{color:var(--red);text-decoration:underline;text-underline-offset:4px}
+.atlas-credit{font:11px/1.4 var(--serif);color:#7b7c68;min-width:0;letter-spacing:.2px}
+.atlas-credit a{color:inherit;text-decoration:none}
+.atlas-credit a:hover{text-decoration:underline}
+@media(max-width:1100px){.atlas-workspace{grid-template-columns:minmax(0,1fr) 215px;gap:16px}.atlas-panel-content{padding-left:16px}.atlas-tools button{padding:8px}.base-study-switch{gap:20px}}
+@media(max-width:850px){#base{height:calc(100svh - 132px)}}
 @media(max-width:700px){
- #base{padding:22px 16px 28px}
- .base-study-head{gap:12px;margin-bottom:16px}
- .base-study-head h1{font-size:23px;letter-spacing:2px}
- .base-study-switch{gap:14px}
- .base-study-switch button{font-size:14px}
- .base-study-foot{gap:14px}
- .base-study-foot p{font-size:12px}
- .base-downloads{font-size:13px}
+ #base{padding:9px 14px 8px;gap:8px!important}
+ .base-study-head{align-items:flex-start;flex-direction:column;gap:5px}
+ .base-study-switch{gap:22px}
+ .base-study-switch button{font-size:15px;padding:3px 0 6px}
+ .atlas-tools{width:100%;justify-content:flex-start;gap:0}
+ .atlas-tools button{font-size:12px;padding:5px 9px;min-height:30px}
+ #atlas-panel-toggle{margin-left:auto;padding-right:0}
+ .atlas-workspace,.atlas-panel-hidden .atlas-workspace{grid-template-columns:minmax(0,1fr);gap:0}
+ .atlas-panel{position:absolute;right:0;top:0;bottom:0;width:min(270px,88%);z-index:6;background:#f5edddf7;border:1px solid #a9987b80;box-shadow:-8px 0 24px #67512e12}
+ .atlas-panel-content{padding:24px 20px 18px}
+ #atlas-panel-close{top:5px}
+ .atlas-north{top:10px;right:10px;font-size:13px}
+ .atlas-scale{left:10px;bottom:10px;font-size:10px}
+ .atlas-credit{font-size:9px;letter-spacing:0}
+ .atlas-place-label{font-size:14px}
 }
+@media(max-width:480px){#base{height:calc(100svh - 120px)}}
+@media(prefers-reduced-motion:reduce){.atlas-place-label{transition:none}}
 
-@font-face{font-family:HuangzhouPoetrySong;src:url('./assets/paper-font-3.5b86c668b2736959.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}
-@font-face{font-family:HuangzhouPoetrySong;src:url('./assets/paper-font-4.09b0a673f7cf640d.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:HuangzhouPoetrySong;src:url('./assets/paper-font-4.5b86c668b2736959.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:HuangzhouPoetrySong;src:url('./assets/paper-font-5.09b0a673f7cf640d.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
 #poetry-reader{--poem-ink:#2e413a;--poem-red:#8d4938;--poem-paper:#f3eddf;--poem-line:#91857138;position:fixed;inset:0;width:100%;max-width:none;height:100dvh;max-height:none;margin:0;padding:0;border:0;background:var(--poem-paper) url('./assets/paper-font-1.01c8c7b92eab1634.webp') repeat;color:var(--poem-ink);font-family:HuangzhouPoetrySong,'Songti SC',SimSun,serif;overflow:auto;overscroll-behavior:contain}
 #poetry-reader::backdrop{background:#ddd7c3}#poetry-reader *{box-sizing:border-box}#poetry-reader [hidden]{display:none!important}#poetry-reader button,#poetry-reader select{font:inherit;color:inherit;cursor:pointer}#poetry-reader button{border:0;background:none;border-radius:0}#poetry-reader button:disabled{cursor:default;opacity:.5}#poetry-reader button:hover:not(:disabled){color:var(--poem-red)}#poetry-reader button:focus-visible,#poetry-reader select:focus-visible,#poetry-reader a:focus-visible{outline:2px solid var(--poem-red);outline-offset:4px}#poetry-reader h1:focus{outline:0}#poetry-reader img{display:block}#poetry-reader img[src$='.svg']{width:24px;height:24px;flex-shrink:0}.poem-sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;clip-path:inset(50%);overflow:hidden;white-space:nowrap;border:0}
 #poetry-reader .poem-topbar{position:sticky;top:0;z-index:10;height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 3vw;border-bottom:1px solid var(--poem-line);background:#f3eddfec;font-size:18px;letter-spacing:2px}.poem-back{display:flex;align-items:center;gap:9px;padding:8px 0}.poem-brand{font-size:20px;letter-spacing:3px}.poem-brand i{font-style:normal;color:#998d75;margin:0 10px}.poem-mode-switch{display:flex;gap:29px;flex-shrink:0}#poetry-reader .poem-mode-switch button{font-size:18px;letter-spacing:2px;padding:10px 0;border-bottom:1px solid transparent;color:#746b5b}#poetry-reader .poem-mode-switch button[aria-selected=true]{color:var(--poem-red);border-bottom-color:var(--poem-red)}
@@ -201,7 +269,7 @@ nav{flex:none;margin:0}
 /* v129: one live poetry leaf using a generated, blank archival paper photograph. */
 #poetry-reader .poem-layout{grid-template-columns:66% minmax(0,1fr);align-items:start}
 #poetry-reader .poem-sheet{position:relative;isolation:isolate;container-type:inline-size;display:flex;flex-direction:column;justify-content:center;min-height:calc(100dvh - 170px);margin-left:12px;padding:clamp(32px,3.1vh,58px) clamp(24px,2vw,52px);border-left:0;background:#f0e5d1;box-shadow:0 0 0 1px #b29a7226,0 2px 8px #5c4c2d0a}
-#poetry-reader .poem-sheet::before{content:'';position:absolute;inset:0;z-index:-1;background:url('./assets/paper-font-9.1c429302820d941b.webp') center/cover no-repeat;opacity:.92;pointer-events:none}
+#poetry-reader .poem-sheet::before{content:'';position:absolute;inset:0;z-index:-1;background:url('./assets/paper-font-10.1c429302820d941b.webp') center/cover no-repeat;opacity:.92;pointer-events:none}
 #poetry-reader #poem-title{display:flex;flex-wrap:wrap;gap:0;font-size:clamp(34px,2.75vw,72px);font-weight:400;letter-spacing:.8px;line-height:1.35;margin:0}
 #poetry-reader #poem-title span{white-space:nowrap}
 #poetry-reader .poem-author{font-size:clamp(22px,1.12vw,28px);margin:12px 0 0;line-height:1.4}
@@ -215,7 +283,7 @@ nav{flex:none;margin:0}
 
 /* v130: transparent generated album frame; nine-slice keeps corner ornaments undistorted. */
 #poetry-reader .poem-sheet{padding-inline:clamp(48px,2vw,52px)}
-#poetry-reader .poem-sheet::after{content:'';position:absolute;inset:6px;z-index:-1;border:64px solid transparent;border-image:url('./assets/paper-font-10.7ede8419a43f7871.webp') 25% / 64px / 0 stretch;opacity:.68;pointer-events:none}
+#poetry-reader .poem-sheet::after{content:'';position:absolute;inset:6px;z-index:-1;border:64px solid transparent;border-image:url('./assets/paper-font-11.7ede8419a43f7871.webp') 25% / 64px / 0 stretch;opacity:.68;pointer-events:none}
 @media(max-width:1400px){#poetry-reader .poem-sheet{padding-inline:40px}}
 @media(max-width:1100px){#poetry-reader .poem-sheet{padding-inline:32px}#poetry-reader .poem-sheet::after{border-width:52px;border-image-width:52px}}
 @media(max-width:700px){#poetry-reader .poem-sheet{padding:42px 30px}#poetry-reader .poem-sheet::after{inset:5px;border-width:48px;border-image-width:48px;opacity:.62}}
