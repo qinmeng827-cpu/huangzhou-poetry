@@ -1,0 +1,521 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.86422988905333,
+          30.45707403603745
+        ]
+      },
+      "properties": {
+        "id": "chibi",
+        "number": "01",
+        "name": "东坡赤壁",
+        "osm": "way/782604616",
+        "status": "景区范围锚点",
+        "type": "park",
+        "works": [
+          "念奴娇·赤壁怀古",
+          "前赤壁赋",
+          "后赤壁赋"
+        ],
+        "note": "以今日景区多边形质心作为入口。代表参观范围，不代表宋代岸线或精确创作点。",
+        "label": [
+          150,
+          235
+        ],
+        "model": true,
+        "source": "https://www.openstreetmap.org/way/782604616"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.8674235,
+          30.4483688
+        ]
+      },
+      "properties": {
+        "id": "dongpo",
+        "number": "02",
+        "name": "东坡故址",
+        "osm": "node/12578391654",
+        "status": "今标记点 · 原址待考",
+        "type": "memorial",
+        "works": [
+          "东坡八首"
+        ],
+        "note": "采用 OSM 现今纪念标记位置。2025 年湖北日报提供另一组接近的坐标，但未声明坐标系，未混入本地图。",
+        "label": [
+          330,
+          405
+        ],
+        "model": true,
+        "source": "https://www.openstreetmap.org/node/12578391654"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.8713833,
+          30.4461721
+        ]
+      },
+      "properties": {
+        "id": "xuetang",
+        "number": "03",
+        "name": "雪堂故址",
+        "osm": "node/12497671229",
+        "status": "今标记点 · 原址待考",
+        "type": "memorial",
+        "works": [
+          "后赤壁赋（地点关联）"
+        ],
+        "note": "现今纪念标记与赤壁景区内雪堂展示建筑应分开。诗文地点关联不等于作品在此写成。",
+        "label": [
+          465,
+          545
+        ],
+        "model": true,
+        "source": "https://www.openstreetmap.org/node/12497671229"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.8745719,
+          30.4466194
+        ]
+      },
+      "properties": {
+        "id": "dinghui-a",
+        "number": "04A",
+        "name": "定惠院遗址",
+        "osm": "node/12491732816",
+        "status": "标记点 A · 存在异说",
+        "type": "disputed",
+        "works": [
+          "卜算子·黄州定慧院寓居作"
+        ],
+        "note": "与另一处“定慧院故址”同时保留，A/B 是本稿索引，不代表学术判断或可信度排序。",
+        "label": [
+          690,
+          335
+        ],
+        "model": true,
+        "source": "https://www.openstreetmap.org/node/12491732816"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.8714737,
+          30.4457648
+        ]
+      },
+      "properties": {
+        "id": "dinghui-b",
+        "number": "04B",
+        "name": "定慧院故址",
+        "osm": "node/12497671230",
+        "status": "标记点 B · 存在异说",
+        "type": "disputed",
+        "works": [
+          "卜算子·黄州定慧院寓居作"
+        ],
+        "note": "OSM 同时收录两处纪念标记。文献亦存在不同定位，暂不选定唯一原址。",
+        "label": [
+          275,
+          630
+        ],
+        "model": false,
+        "source": "https://www.openstreetmap.org/node/12497671230"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.8808539,
+          30.4439231
+        ]
+      },
+      "properties": {
+        "id": "chengtian",
+        "number": "05",
+        "name": "承天寺",
+        "osm": "node/12377501198",
+        "status": "今遗址标记 · 待实勘",
+        "type": "memorial",
+        "works": [
+          "记承天寺夜游"
+        ],
+        "note": "以现今黄州承天寺遗址纪念标记作为入口。所绘院落为风格符号，不是宋代建筑复原。",
+        "label": [
+          835,
+          485
+        ],
+        "model": true,
+        "source": "https://www.openstreetmap.org/node/12377501198"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.8786454,
+          30.440652
+        ]
+      },
+      "properties": {
+        "id": "lingao",
+        "number": "06",
+        "name": "临皋亭",
+        "osm": "node/12497677063",
+        "status": "今标记点 · 原址待考",
+        "type": "memorial",
+        "works": [
+          "临江仙·夜归临皋"
+        ],
+        "note": "以 OSM 今遗址纪念点展示。历史定位存在讨论，不能据此推定宋代江岸。",
+        "label": [
+          815,
+          650
+        ],
+        "model": true,
+        "source": "https://www.openstreetmap.org/node/12497677063"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.8663147,
+          30.458019
+        ]
+      },
+      "properties": {
+        "id": "longwangshan",
+        "name": "龙王山",
+        "category": "terrain-landmark",
+        "works": [],
+        "status": "学者考证点 · 模型待制作",
+        "number": "07",
+        "type": "research",
+        "model": false,
+        "note": "用户提供；据用户说明，资料来自本地权威学者考证。 坐标系未声明，按提供数值落点；本轮只显示地点标记，建筑模型与诗文关联尚未接入。",
+        "label": [
+          30,
+          65
+        ],
+        "source": "用户提供；据用户说明，资料来自本地权威学者考证。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.863131,
+          30.452108
+        ]
+      },
+      "properties": {
+        "id": "zhoufu",
+        "name": "黄州州府",
+        "category": "government",
+        "works": [],
+        "status": "学者考证点 · 宋风意象模型",
+        "number": "08",
+        "type": "research",
+        "model": true,
+        "note": "用户提供；据用户说明，资料来自本地权威学者考证。 坐标按用户资料保留；建筑为宋风艺术设计，不是实测或考古复原。诗文关联尚待补充。 考证坐标保留；按用户批准，将建筑展示位置艺术化调整，以避让水面与放大后的相邻模型。偏移是画面构图，不是遗址位置修订。",
+        "label": [
+          400,
+          65
+        ],
+        "displayOffset": [
+          104,
+          0
+        ],
+        "displayCoordinate": [
+          114.87398008763556,
+          30.452108
+        ],
+        "source": "用户提供；据用户说明，资料来自本地权威学者考证。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.876149,
+          30.436516
+        ]
+      },
+      "properties": {
+        "id": "anguosi",
+        "name": "安国寺",
+        "category": "temple",
+        "works": [],
+        "status": "学者考证点 · 宋风意象模型",
+        "number": "09",
+        "type": "research",
+        "model": true,
+        "note": "用户提供；据用户说明，资料来自本地权威学者考证。 坐标按用户资料保留；建筑为宋风艺术设计，不是实测或考古复原。诗文关联尚待补充。 考证坐标保留；按用户批准，将建筑展示位置艺术化调整，以避让水面与放大后的相邻模型。偏移是画面构图，不是遗址位置修订。",
+        "label": [
+          770,
+          65
+        ],
+        "displayOffset": [
+          0,
+          8
+        ],
+        "displayCoordinate": [
+          114.876149,
+          30.43579654370902
+        ],
+        "source": "用户提供；据用户说明，资料来自本地权威学者考证。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.882366,
+          30.491784
+        ]
+      },
+      "properties": {
+        "id": "yuwangcheng",
+        "name": "禹王城",
+        "category": "historic-city",
+        "works": [],
+        "status": "学者考证点 · 模型待制作",
+        "number": "10",
+        "type": "research",
+        "model": false,
+        "note": "用户提供；据用户说明，资料来自本地权威学者考证。 坐标系未声明，按提供数值落点；本轮只显示地点标记，建筑模型与诗文关联尚未接入。",
+        "label": [
+          30,
+          135
+        ],
+        "source": "用户提供；据用户说明，资料来自本地权威学者考证。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.862445,
+          30.450463
+        ]
+      },
+      "properties": {
+        "id": "hanhuilou",
+        "name": "涵辉楼",
+        "category": "tower",
+        "works": [],
+        "status": "学者考证点 · 宋风意象模型",
+        "number": "11",
+        "type": "research",
+        "model": true,
+        "note": "用户提供；据用户说明，资料来自本地权威学者考证。 坐标按用户资料保留；建筑为宋风艺术设计，不是实测或考古复原。诗文关联尚待补充。 考证坐标保留；按用户批准，将建筑展示位置艺术化调整，以避让水面与放大后的相邻模型。偏移是画面构图，不是遗址位置修订。",
+        "label": [
+          400,
+          135
+        ],
+        "displayOffset": [
+          28,
+          72
+        ],
+        "displayCoordinate": [
+          114.86536590820957,
+          30.443987893381184
+        ],
+        "source": "用户提供；据用户说明，资料来自本地权威学者考证。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.870654,
+          30.440742
+        ]
+      },
+      "properties": {
+        "id": "yiaiting",
+        "name": "遗爱亭",
+        "category": "pavilion",
+        "works": [],
+        "status": "学者考证点 · 宋风意象模型",
+        "number": "12",
+        "type": "research",
+        "model": true,
+        "note": "用户提供；据用户说明，资料来自本地权威学者考证。 坐标按用户资料保留；建筑为宋风艺术设计，不是实测或考古复原。诗文关联尚待补充。 考证坐标保留；按用户批准，将建筑展示位置艺术化调整，以避让水面与放大后的相邻模型。偏移是画面构图，不是遗址位置修订。",
+        "label": [
+          770,
+          135
+        ],
+        "displayOffset": [
+          -8,
+          0
+        ],
+        "displayCoordinate": [
+          114.86981945479727,
+          30.440742
+        ],
+        "source": "用户提供；据用户说明，资料来自本地权威学者考证。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.966557,
+          30.526844
+        ]
+      },
+      "properties": {
+        "id": "shahu",
+        "name": "沙湖",
+        "category": "landscape",
+        "works": [],
+        "status": "学者考证点 · 模型待制作",
+        "number": "13",
+        "type": "research",
+        "model": false,
+        "note": "用户提供；据用户说明，资料来自本地权威学者考证。 坐标系未声明，按提供数值落点；本轮只显示地点标记，建筑模型与诗文关联尚未接入。",
+        "label": [
+          30,
+          205
+        ],
+        "source": "用户提供；据用户说明，资料来自本地权威学者考证。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.870833,
+          30.451389
+        ]
+      },
+      "properties": {
+        "id": "huaihuamen",
+        "name": "怀化门（东门）",
+        "category": "gate",
+        "works": [],
+        "status": "学者考证点 · 模型待制作",
+        "number": "14",
+        "type": "research",
+        "model": false,
+        "note": "用户提供；据用户说明，资料来自本地权威学者考证。 坐标系未声明，按提供数值落点；本轮只显示地点标记，建筑模型与诗文关联尚未接入。",
+        "label": [
+          400,
+          205
+        ],
+        "source": "用户提供；据用户说明，资料来自本地权威学者考证。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.868611,
+          30.446111
+        ]
+      },
+      "properties": {
+        "id": "chaotianmen",
+        "name": "朝天门（朝宗门：南门）",
+        "category": "gate",
+        "works": [],
+        "status": "学者考证点 · 模型待制作",
+        "number": "15",
+        "type": "research",
+        "model": false,
+        "note": "用户提供；据用户说明，资料来自本地权威学者考证。 坐标系未声明，按提供数值落点；本轮只显示地点标记，建筑模型与诗文关联尚未接入。",
+        "label": [
+          770,
+          205
+        ],
+        "source": "用户提供；据用户说明，资料来自本地权威学者考证。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.863611,
+          30.445833
+        ]
+      },
+      "properties": {
+        "id": "xiangrimen",
+        "name": "向日门（西南门）",
+        "category": "gate",
+        "works": [],
+        "status": "学者考证点 · 模型待制作",
+        "number": "16",
+        "type": "research",
+        "model": false,
+        "note": "用户提供；据用户说明，资料来自本地权威学者考证。 坐标系未声明，按提供数值落点；本轮只显示地点标记，建筑模型与诗文关联尚未接入。",
+        "label": [
+          30,
+          275
+        ],
+        "source": "用户提供；据用户说明，资料来自本地权威学者考证。"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          114.868153,
+          30.450075
+        ]
+      },
+      "properties": {
+        "id": "longfengmen",
+        "name": "龙凤门",
+        "category": "gate",
+        "works": [],
+        "status": "学者考证点 · 模型待制作",
+        "number": "17",
+        "type": "research",
+        "model": false,
+        "note": "用户提供；据用户说明，资料来自本地权威学者考证。 坐标系未声明，按提供数值落点；本轮只显示地点标记，建筑模型与诗文关联尚未接入。",
+        "label": [
+          400,
+          275
+        ],
+        "source": "用户提供；据用户说明，资料来自本地权威学者考证。"
+      }
+    }
+  ]
+}

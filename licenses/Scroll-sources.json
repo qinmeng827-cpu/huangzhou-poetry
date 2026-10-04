@@ -1,0 +1,179 @@
+{
+  "version": "v124",
+  "verified_at": "2026-10-02",
+  "scope": "Independent poetry-page preview; production map and v122 poetry reader unchanged.",
+  "institution": "The Cleveland Museum of Art",
+  "object": {
+    "id": 149119,
+    "accession_number": "1977.5",
+    "title": "Sericulture (The Process of Making Silk)",
+    "display_title": "耕织图",
+    "url": "https://www.clevelandart.org/art/1977.5",
+    "share_license_status": "CC0"
+  },
+  "license": {
+    "name": "CC0 1.0",
+    "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "institution_policy": "https://www.clevelandart.org/open-access",
+    "api": "https://openaccess-api.clevelandart.org/api/artworks/?accession_number=1977.5"
+  },
+  "photographs": [
+    {
+      "web": "https://openaccess-cdn.clevelandart.org/1977.5/1977.5_alt1_web.jpg",
+      "print": "https://openaccess-cdn.clevelandart.org/1977.5/1977.5_alt1_print.jpg",
+      "purpose": "Mounting cover reference"
+    },
+    {
+      "web": "https://openaccess-cdn.clevelandart.org/1977.5/1977.5_alt2_web.jpg",
+      "print": "https://openaccess-cdn.clevelandart.org/1977.5/1977.5_alt2_print.jpg",
+      "purpose": "Silk reverse and photographed wooden support grain"
+    },
+    {
+      "web": "https://openaccess-cdn.clevelandart.org/1977.5/1977.5_alt3_web.jpg",
+      "print": "https://openaccess-cdn.clevelandart.org/1977.5/1977.5_alt3_print.jpg",
+      "purpose": "Silk mounting reference"
+    },
+    {
+      "web": "https://openaccess-cdn.clevelandart.org/1977.5/1977.5_alt4_web.jpg",
+      "print": "https://openaccess-cdn.clevelandart.org/1977.5/1977.5_alt4_print.jpg",
+      "purpose": "Blank paper and ivory silk mounting"
+    },
+    {
+      "web": "https://openaccess-cdn.clevelandart.org/1977.5/1977.5_alt5_web.jpg",
+      "print": "https://openaccess-cdn.clevelandart.org/1977.5/1977.5_alt5_print.jpg",
+      "purpose": "Blank paper reference"
+    },
+    {
+      "web": "https://openaccess-cdn.clevelandart.org/1977.5/1977.5_alt26_web.jpg",
+      "print": "https://openaccess-cdn.clevelandart.org/1977.5/1977.5_alt26_print.jpg",
+      "purpose": "Rolled physical handscroll reference"
+    }
+  ],
+  "original_files": [
+    {
+      "file": "cma-1977-5-alt2-print.jpg",
+      "bytes": 2428466,
+      "sha256": "6577e3e78d0ec21aa8af724dbe51761e46f42a3657d48d7f477705ab1a7a804d"
+    },
+    {
+      "file": "cma-1977-5-alt2-source.jpg",
+      "bytes": 266831,
+      "sha256": "5e54b950d94b92a014242c151e2c6ff15b79685e36703814b902c9f0402ae1ad"
+    },
+    {
+      "file": "cma-1977-5-alt26-print.jpg",
+      "bytes": 4148279,
+      "sha256": "5f701e836850561c717b4c2a79104f4a1a68089a3f15bb7aa21cb224c7bdcdd5"
+    },
+    {
+      "file": "cma-1977-5-alt26-source.jpg",
+      "bytes": 298055,
+      "sha256": "35da0387dc9043813a3001f244664eccad20ba3f15face28b3bab23c95886786"
+    },
+    {
+      "file": "cma-1977-5-alt3-source.jpg",
+      "bytes": 287198,
+      "sha256": "605bbe0bdc4d70b455eea80bdc2d46cd8e0410c23c417dde055ba11ea5e39054"
+    },
+    {
+      "file": "cma-1977-5-alt4-print.jpg",
+      "bytes": 2264535,
+      "sha256": "48002957cff8fcb4d83a7c551f3530328cfdbc46b221ff155bb870777ab16cfc"
+    },
+    {
+      "file": "cma-1977-5-alt4-source.jpg",
+      "bytes": 193951,
+      "sha256": "fd0ef63a14b8e842225dd7a31c4146eb28ad2338a8159afe4d98323b88fcd123"
+    },
+    {
+      "file": "cma-1977-5-alt5-source.jpg",
+      "bytes": 91837,
+      "sha256": "11bc5f6d58c403b719d557eebdeabb63c0347386e27de4fcd75fb4133166d530"
+    },
+    {
+      "file": "cma-1977-5-roll-source.jpg",
+      "bytes": 285898,
+      "sha256": "6da152d080da7fc94b3111ac809f789eeb541e3d3b3f566f862d782518780dce"
+    }
+  ],
+  "derived_assets": [
+    {
+      "source": "cma-1977-5-alt2-print.jpg",
+      "name": "scroll-silk.webp",
+      "rect": {
+        "left": 30,
+        "top": 20,
+        "width": 2390,
+        "height": 2480
+      },
+      "width": 1024,
+      "dimensions": {
+        "width": 1024,
+        "height": 1063
+      },
+      "bytes": 449268,
+      "sha256": "06d090dabd0d64c4e97661011bb4e315fd240d23c4f4f7a92936d9e7ed062288"
+    },
+    {
+      "source": "cma-1977-5-alt4-print.jpg",
+      "name": "scroll-paper.webp",
+      "rect": {
+        "left": 10,
+        "top": 135,
+        "width": 940,
+        "height": 2210
+      },
+      "width": 512,
+      "dimensions": {
+        "width": 512,
+        "height": 1204
+      },
+      "bytes": 86662,
+      "sha256": "b2e5a36e2daa51c4a176257fd64fc1b3f6ec0b0a8ea61ba80c1e63e2063b8006"
+    },
+    {
+      "source": "cma-1977-5-alt4-print.jpg",
+      "name": "mount-silk.webp",
+      "rect": {
+        "left": 1080,
+        "top": 25,
+        "width": 760,
+        "height": 2490
+      },
+      "width": 512,
+      "dimensions": {
+        "width": 512,
+        "height": 1677
+      },
+      "bytes": 352068,
+      "sha256": "59884db7a629de5d79f795a36e46eb12b7c2caf47895f54df2cdfbbd5b4d7deb"
+    },
+    {
+      "source": "cma-1977-5-alt2-print.jpg",
+      "name": "scroll-wood.webp",
+      "rect": {
+        "left": 2640,
+        "top": 392,
+        "width": 750,
+        "height": 170
+      },
+      "width": 768,
+      "dimensions": {
+        "width": 768,
+        "height": 174
+      },
+      "bytes": 17050,
+      "sha256": "d1c6b89f232e5e9844b8ba1198778ede21de3c282c74ff4e3a12e10dc70bf223"
+    }
+  ],
+  "usage": "Only physical mounting, paper, silk and wood detail is sampled. Museum tags, measurement scales, original labels and the historical painting are excluded from rendered UI. Geometry and motion are project-created; the photos are not an animated film.",
+  "rendering": {
+    "library": "Existing Three.js dependency",
+    "direction": "Right to left inside the video mount",
+    "duration_ms": 2210,
+    "motion": "Decreasing roll radius, curved paper edge, coordinated shadow and gradual handoff to the original video poster",
+    "idle": "No continuous rendering after opening; rerender on resize only",
+    "fallback": "Film remains visible if the motion module or WebGL is unavailable",
+    "final_mount": "Two matching ivory paper-covered cylinders with identical wooden knob geometry, scale and symmetric edge placement; moving roll thickness still changes during opening."
+  }
+}

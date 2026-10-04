@@ -1,0 +1,108 @@
+{
+  "license": "CC BY 4.0",
+  "attribution": "金武元直赤壁圖　卷。國立故宮博物院，台北，CC BY 4.0 @ www.npm.gov.tw",
+  "images": [
+    {
+      "section": 1,
+      "file": "assets/poetry/chibi-reader-v127/originals/section-01.jpg",
+      "source": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000993N000000000PAA/full/2000,/0/default.jpg",
+      "sha256": "3b56b4183db8a145e7da0f797466c1be739d33fc625aa5200851b533c564edcc"
+    },
+    {
+      "section": 2,
+      "file": "assets/poetry/chibi-reader-v127/originals/section-02.jpg",
+      "source": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000993N000000000PAB/full/2000,/0/default.jpg",
+      "sha256": "1effa02330a11ad9806c8c5cc68502ecb003fe32c41078c2c449dfd8c2497fc1"
+    },
+    {
+      "section": 3,
+      "file": "assets/poetry/chibi-reader-v127/originals/section-03.jpg",
+      "source": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000993N000000000PAC/full/2000,/0/default.jpg",
+      "sha256": "e21086edc94cb1cb0a60bff4fffba71db93adde1399e9ce1f38e14dfff72a930"
+    },
+    {
+      "section": 4,
+      "file": "assets/poetry/chibi-reader-v127/originals/section-04.jpg",
+      "source": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000993N000000000PAD/full/2000,/0/default.jpg",
+      "sha256": "33f43d23e0235849b49af09f8882d5bbbc968fa38524c4ee5ab4e9fa58c3368e"
+    },
+    {
+      "section": 5,
+      "file": "assets/poetry/chibi-reader-v127/originals/section-05.jpg",
+      "source": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000993N000000000PAE/full/2000,/0/default.jpg",
+      "sha256": "6ad332c096c6758fe3e83c869d35d7dcc13c0eb51d7dcc7cdd608d934a3a7ac1"
+    },
+    {
+      "section": 6,
+      "file": "assets/poetry/chibi-reader-v127/originals/section-06.jpg",
+      "source": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000993N000000000PAF/full/2000,/0/default.jpg",
+      "sha256": "510238e4870c89daca0901b7f6fb0735ec239fef6235b0a15c21838fa1b59871"
+    },
+    {
+      "section": 7,
+      "file": "assets/poetry/chibi-reader-v127/originals/section-07.jpg",
+      "source": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000993N000000000PAG/full/2000,/0/default.jpg",
+      "sha256": "f5d34e1aee70021316ccde6097498a0cceafcaa7bad0ef80a6b7845a2cbce372"
+    },
+    {
+      "section": 8,
+      "file": "assets/poetry/chibi-reader-v127/originals/section-08.jpg",
+      "source": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000993N000000000PAH/full/2000,/0/default.jpg",
+      "sha256": "d1c3ff5957bee1f692f94297ffb4240420e35938ad7344859ad1f369cc4004f8"
+    },
+    {
+      "section": 9,
+      "file": "assets/poetry/chibi-reader-v127/originals/section-09.jpg",
+      "source": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000993N000000000PAI/full/2000,/0/default.jpg",
+      "sha256": "844b1fcd64276d4c32dc2d9defdf7f8d569218b51f358fc58ece6ff5e7b809f7"
+    },
+    {
+      "section": 10,
+      "file": "assets/poetry/chibi-reader-v127/originals/section-10.jpg",
+      "source": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000993N000000000PAJ/full/2000,/0/default.jpg",
+      "sha256": "dd40ba4e017dfda027569bcdb710a9c0a8e0e57b61d18b9f397c79ca7a1a5384"
+    },
+    {
+      "section": 11,
+      "file": "assets/poetry/chibi-reader-v127/originals/section-11.jpg",
+      "source": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000993N000000000PAK/full/2000,/0/default.jpg",
+      "sha256": "3c99ebcc8630b51f5fbe215031794f0b13b6306880d3de570b61bfacbfc06f92"
+    },
+    {
+      "section": 12,
+      "file": "assets/poetry/chibi-reader-v127/originals/section-12.jpg",
+      "source": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000993N000000000PAL/full/2000,/0/default.jpg",
+      "sha256": "77fd50077f718ac1c27490e81def4da1189db6bf17c157d3ebbe419a75e8043d"
+    },
+    {
+      "section": 13,
+      "file": "assets/poetry/chibi-reader-v127/originals/section-13.jpg",
+      "source": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000993N000000000PAM/full/2000,/0/default.jpg",
+      "sha256": "05c5055bcfcee66350d81a7242c36959580d6943e9118a7164af947bcc8cb768"
+    },
+    {
+      "section": 14,
+      "file": "assets/poetry/chibi-reader-v127/originals/section-14.jpg",
+      "source": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000993N000000000PAN/full/2000,/0/default.jpg",
+      "sha256": "d35c020e588a90511f0e7090a09e25cb8a1a5efad3307992c9fe5e4eac084218"
+    },
+    {
+      "section": 15,
+      "file": "assets/poetry/chibi-reader-v127/originals/section-15.jpg",
+      "source": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000993N000000000PAO/full/2000,/0/default.jpg",
+      "sha256": "c5605ae0cf016267b1743ad36ddb02a0447ba9b675a7585b5abc051c8e4e3e23"
+    },
+    {
+      "section": 16,
+      "file": "assets/poetry/chibi-reader-v127/originals/section-16.jpg",
+      "source": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000993N000000000PAP/full/2000,/0/default.jpg",
+      "sha256": "1fac17fc0d92f49df10954f52334547fc8aad3d1b5a9669fedb354a6419bc9c5"
+    },
+    {
+      "section": 17,
+      "file": "assets/poetry/chibi-reader-v127/originals/section-17.jpg",
+      "source": "https://iiifod.npm.gov.tw/iiif/2/K2A%2FK2A000993N000000000PAS/full/2000,/0/default.jpg",
+      "sha256": "e437eaa45c45cd720a2447dc441e96535003cf54583aed86814ebce19f7c01d3"
+    }
+  ]
+}

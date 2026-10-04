@@ -1,0 +1,16 @@
+{
+  "name": "思源宋体简体中文 / Source Han Serif SC",
+  "upstream": "https://github.com/adobe-fonts/source-han-serif",
+  "release_reference": "https://github.com/adobe-fonts/source-han-serif/releases/tag/2.003R",
+  "license": "SIL Open Font License 1.1",
+  "license_url": "https://github.com/adobe-fonts/source-han-serif/blob/release/LICENSE.txt",
+  "local_license": "OFL.txt",
+  "copyright": "Copyright 2017-2022 Adobe; Reserved Font Name 'Source'",
+  "retrieved": "2026-10-02",
+  "download_records": "download-records.json",
+  "mirror_note": "Font files downloaded from the ISCAS public mirror; version 2.003 verified from each OTF name table. Exact files are recorded by SHA-256.",
+  "modifications": "Only glyph subsetting and WOFF2 packaging; original outlines retained. Derivative family renamed HuangzhouSongPreview to respect the reserved font name.",
+  "usage": "Independent poetry video-page preview title and author only. Light 300 for title; Regular 400 for author.",
+  "web_font_total_bytes": 14320,
+  "subset_records": "subset-records.json"
+}
