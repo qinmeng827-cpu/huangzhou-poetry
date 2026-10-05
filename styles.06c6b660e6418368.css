@@ -485,8 +485,131 @@ body:has(#sources.active)>footer{display:none}
  #base .atlas-marker:after{display:none}
 }
 
-@font-face{font-family:HuangzhouPoetrySong;src:url('./assets/paper-font-19.5b86c668b2736959.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}
-@font-face{font-family:HuangzhouPoetrySong;src:url('./assets/paper-font-20.09b0a673f7cf640d.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+/* v145: one guide leaf contains the atlas title, viewing controls and information. */
+#base.view.active{grid-template-rows:minmax(0,1fr) auto;gap:8px}
+#base .atlas-workspace,#base.atlas-panel-hidden .atlas-workspace{grid-template-columns:minmax(0,var(--atlas-map-width,1fr)) var(--atlas-panel-width,390px);gap:var(--atlas-gap,40px)}
+#base .atlas-guide{position:relative;isolation:isolate;min-width:0;min-height:0;height:100%;display:flex;flex-direction:column;padding:30px 30px 28px;background:#f7f1e5;box-shadow:0 5px 20px #5649340b}
+#base .atlas-guide:before{content:'';position:absolute;inset:0;z-index:-1;background:url('./assets/paper-font-11.33dcc899266a3ffc.webp') center bottom/100% 100% no-repeat;opacity:.26;pointer-events:none}
+#base .atlas-guide:after{content:'';position:absolute;inset:4px;border:68px solid transparent;border-image:url('./assets/paper-font-8.7ede8419a43f7871.webp') 25% / 68px / 0 stretch;opacity:.38;pointer-events:none;z-index:2}
+#base .base-study-head{width:100%;margin:0;display:flex;flex-direction:column;align-items:stretch;gap:16px;padding-bottom:18px;border-bottom:1px solid #a3927350;flex:none}
+#base #base-title{justify-content:center;font-size:36px;line-height:1.35;letter-spacing:3px;gap:16px}
+#base #base-title:after{width:84px;height:27px;opacity:.5}
+#base .atlas-tools{width:100%;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr) 40px 40px;gap:6px;justify-content:stretch}
+#base .atlas-tools button{justify-content:center;gap:6px;min-height:44px;padding:7px 5px;font-size:19px;line-height:1.3;white-space:nowrap;border:1px solid #a3927333;background:#f8f3e65c}
+#base .atlas-tools button:hover:not(:disabled){background:#b9906517;color:#914d39;border-color:#ad785b55}
+#base .atlas-tools button .atlas-icon{width:20px;height:20px}
+#base #atlas-panel-toggle{grid-column:1/-1;margin:2px 0 0;padding:6px 0;min-height:36px;border:0;background:transparent;color:#82664e;letter-spacing:1px}
+#base #atlas-panel-toggle:after{content:'⌃';font-size:13px;margin-left:4px}
+#base #atlas-panel-toggle[aria-expanded=false]:after{content:'⌄'}
+#base #atlas-panel{position:relative;inset:auto;width:auto;flex:1;min-height:0;margin-top:24px;background:transparent;box-shadow:none;border:0;overflow:hidden}
+#base #atlas-panel:before,#base #atlas-panel:after{display:none}
+#base .atlas-panel-content{height:100%;padding:0!important;display:grid;grid-template-rows:auto minmax(min-content,1fr) auto;gap:24px;overflow:auto;scrollbar-gutter:stable;scrollbar-width:thin}
+#base #atlas-panel-close{top:0;right:0;min-height:32px;min-width:32px;padding:4px;font-size:20px;z-index:3}
+#base .atlas-panel h2,#base .atlas-site>label{font-size:27px;line-height:1.4;margin:0 0 16px;letter-spacing:2px}
+#base .atlas-legend ul{font-size:21px;gap:13px 16px}
+#base #atlas-grid-toggle{font-size:20px;min-height:40px;margin-top:12px;padding:4px 0}
+#base .atlas-site{margin:0;padding:22px 0 18px;border-top:1px solid #a3927345;display:flex;flex-direction:column;justify-content:center}
+#base .atlas-panel p{font-size:19px;line-height:1.8;margin:13px 0 0}
+#base #atlas-place-picker{font-size:21px;line-height:1.5;min-height:48px;padding:9px 3px}
+#base #atlas-selection h2{font-size:29px;line-height:1.45;margin:0}
+#base #atlas-selection:not([hidden]){margin-top:12px}
+#base #atlas-place-picker[hidden]+#atlas-selection{margin-top:0}
+#base #atlas-explore{font-size:21px;min-height:42px;margin-top:15px;align-self:flex-start}
+#base .atlas-secondary{margin:0;padding:17px 0 0;border-top:1px solid #a3927345;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;align-items:start}
+#base .atlas-secondary summary{font-size:18px;min-height:44px;padding:5px 0;gap:6px}
+#base .atlas-secondary summary .atlas-icon{width:19px;height:19px}
+#base .atlas-secondary summary:after{margin-left:3px}
+#base .atlas-secondary .base-downloads{margin:0}
+#base .atlas-secondary:has(details[open]){display:block}
+#base .atlas-secondary:has(details[open]) .base-downloads{margin-top:10px}
+#base .atlas-guide:has(#atlas-selection:not([hidden])):before,#base .atlas-guide:has(details[open]):before{opacity:.18}
+#base.atlas-panel-hidden .atlas-guide{align-self:start;height:auto;padding:22px 20px}
+#base.atlas-panel-hidden .base-study-head{padding-bottom:0;border-bottom:0;gap:12px}
+#base.atlas-panel-hidden #base-title{font-size:29px;gap:12px}
+#base.atlas-panel-hidden #base-title:after{width:62px;height:24px}
+#base.atlas-panel-hidden .atlas-tools button{font-size:16px;gap:5px;padding-inline:3px}
+#base.atlas-panel-hidden .atlas-tools button .atlas-icon{width:18px;height:18px}
+@media(min-width:901px) and (max-height:850px){
+ #base .atlas-guide{padding:20px 26px}
+ #base .base-study-head{gap:10px;padding-bottom:10px}
+ #base #base-title{font-size:30px}
+ #base #atlas-panel{margin-top:16px}
+ #base .atlas-panel-content{gap:10px}
+ #base .atlas-panel h2,#base .atlas-site>label{font-size:24px;margin-bottom:9px}
+ #base .atlas-legend ul{font-size:19px;gap:8px 14px}
+ #base #atlas-grid-toggle{font-size:18px;min-height:32px;margin-top:6px;padding-block:2px}
+ #base .atlas-site{padding:10px 0 8px}
+ #base .atlas-panel p{font-size:18px;line-height:1.7;margin-top:8px}
+ #base #atlas-place-picker{font-size:20px;min-height:44px;padding:7px 3px}
+ #base .atlas-secondary{padding-top:8px}
+ #base .atlas-secondary summary{font-size:17px;min-height:40px}
+}
+@media(min-width:1500px) and (min-height:1100px){
+ #base .atlas-guide{padding:40px 38px 36px}
+ #base .base-study-head{gap:20px;padding-bottom:24px}
+ #base #base-title{font-size:42px}
+ #base .atlas-tools button{font-size:22px;min-height:50px}
+ #base #atlas-panel-toggle{min-height:40px}
+ #base #atlas-panel{margin-top:30px}
+ #base .atlas-panel-content{gap:32px}
+ #base .atlas-panel h2,#base .atlas-site>label{font-size:32px;margin-bottom:20px}
+ #base .atlas-legend ul{font-size:24px;gap:18px}
+ #base #atlas-grid-toggle{font-size:23px;min-height:46px;margin-top:18px}
+ #base .atlas-site{padding:32px 0 28px}
+ #base #atlas-place-picker{font-size:24px;min-height:56px}
+ #base .atlas-panel p{font-size:22px;line-height:1.85;margin-top:18px}
+ #base .atlas-secondary{padding-top:22px}
+ #base .atlas-secondary summary{font-size:22px;min-height:48px}
+ #base.atlas-panel-hidden .atlas-guide{padding:22px 20px}
+ #base.atlas-panel-hidden .base-study-head{gap:12px;padding-bottom:0}
+ #base.atlas-panel-hidden .atlas-tools button{font-size:16px;min-height:44px}
+}
+@media(max-width:900px){
+ #base .atlas-workspace,#base.atlas-panel-hidden .atlas-workspace{grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr);gap:10px}
+ #base .atlas-guide,#base.atlas-panel-hidden .atlas-guide{grid-row:1;width:100%;height:auto;padding:16px 22px;z-index:6}
+ #base .atlas-viewport{grid-row:2;width:var(--atlas-map-width,100%);justify-self:center;align-self:start}
+ #base .atlas-guide:before{background:url('./assets/paper-font-5.1c429302820d941b.webp') center/cover;opacity:.14}
+ #base .atlas-guide:after{border-width:45px;border-image-width:45px;opacity:.32}
+ #base .base-study-head,#base.atlas-panel-hidden .base-study-head{gap:10px;padding:0;border:0}
+ #base #base-title,#base.atlas-panel-hidden #base-title{font-size:27px;gap:13px}
+ #base #base-title:after,#base.atlas-panel-hidden #base-title:after{width:72px;height:24px}
+ #base .atlas-tools{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr) 40px 40px}
+ #base .atlas-tools button,#base.atlas-panel-hidden .atlas-tools button{font-size:17px;padding-inline:4px;gap:5px}
+ #base #atlas-panel-toggle{min-height:32px;margin-top:0;padding-block:4px}
+ #base #atlas-panel{position:absolute;top:calc(100% - 1px);left:0;right:0;bottom:auto;width:100%;height:var(--atlas-guide-body-height,400px);margin:0;padding:20px 24px!important;background:#f7f1e5;border:1px solid #a3927360;border-top:0;box-shadow:0 8px 20px #56493415;isolation:isolate}
+ #base #atlas-panel:before{display:block;content:'';position:absolute;inset:0;background:url('./assets/paper-font-11.33dcc899266a3ffc.webp') center bottom/100% 100% no-repeat;opacity:.2;pointer-events:none;z-index:-1}
+ #base .atlas-panel-content{gap:16px}
+ #base #atlas-panel-close{right:18px;top:14px}
+ #base .atlas-panel h2,#base .atlas-site>label{font-size:24px;margin-bottom:12px}
+ #base .atlas-legend ul{font-size:19px;gap:11px 14px}
+ #base #atlas-grid-toggle{font-size:18px;min-height:36px;margin-top:8px}
+ #base .atlas-site{padding:16px 0 12px}
+ #base .atlas-panel p{font-size:17px;line-height:1.75}
+ #base #atlas-place-picker{font-size:20px;min-height:44px}
+ #base .atlas-secondary{padding-top:12px}
+ #base .atlas-secondary summary{font-size:17px;min-height:40px}
+}
+@media(max-width:480px){
+ #base .atlas-guide,#base.atlas-panel-hidden .atlas-guide{padding:14px 18px}
+ #base .atlas-tools,#base.atlas-panel-hidden .atlas-tools{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr) 36px 36px;gap:5px}
+ #base .atlas-tools button,#base.atlas-panel-hidden .atlas-tools button{font-size:14px;padding-inline:2px;gap:4px}
+ #base .atlas-tools button .atlas-icon,#base.atlas-panel-hidden .atlas-tools button .atlas-icon{width:17px;height:17px}
+ #base #atlas-panel{padding:20px 20px!important}
+ #base #atlas-selection h2{font-size:25px}
+ #base .atlas-secondary summary{font-size:15px}
+}
+@media(min-width:600px) and (max-width:900px) and (max-height:600px){
+ #base .atlas-guide,#base.atlas-panel-hidden .atlas-guide{padding:10px 16px}
+ #base .base-study-head,#base.atlas-panel-hidden .base-study-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);align-items:center;gap:12px}
+ #base #base-title,#base.atlas-panel-hidden #base-title{font-size:24px;justify-content:flex-start}
+ #base #base-title:after{display:none}
+ #base .atlas-tools{grid-template-columns:minmax(0,1fr) minmax(0,1.15fr) 34px 34px minmax(115px,1.7fr);gap:4px}
+ #base .atlas-tools button,#base.atlas-panel-hidden .atlas-tools button{font-size:14px;gap:4px;padding-inline:2px;min-height:40px}
+ #base #atlas-panel-toggle{grid-column:auto;margin:0;letter-spacing:0}
+}
+
+@font-face{font-family:HuangzhouPoetrySong;src:url('./assets/paper-font-23.5b86c668b2736959.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:HuangzhouPoetrySong;src:url('./assets/paper-font-24.09b0a673f7cf640d.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
 #poetry-reader{--poem-ink:#2e413a;--poem-red:#8d4938;--poem-paper:#f3eddf;--poem-line:#91857138;position:fixed;inset:0;width:100%;max-width:none;height:100dvh;max-height:none;margin:0;padding:0;border:0;background:var(--poem-paper) url('./assets/paper-font-1.01c8c7b92eab1634.webp') repeat;color:var(--poem-ink);font-family:HuangzhouPoetrySong,'Songti SC',SimSun,serif;overflow:auto;overscroll-behavior:contain}
 #poetry-reader::backdrop{background:#ddd7c3}#poetry-reader *{box-sizing:border-box}#poetry-reader [hidden]{display:none!important}#poetry-reader button,#poetry-reader select{font:inherit;color:inherit;cursor:pointer}#poetry-reader button{border:0;background:none;border-radius:0}#poetry-reader button:disabled{cursor:default;opacity:.5}#poetry-reader button:hover:not(:disabled){color:var(--poem-red)}#poetry-reader button:focus-visible,#poetry-reader select:focus-visible,#poetry-reader a:focus-visible{outline:2px solid var(--poem-red);outline-offset:4px}#poetry-reader h1:focus{outline:0}#poetry-reader img{display:block}#poetry-reader img[src$='.svg']{width:24px;height:24px;flex-shrink:0}.poem-sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;clip-path:inset(50%);overflow:hidden;white-space:nowrap;border:0}
 #poetry-reader .poem-topbar{position:sticky;top:0;z-index:10;height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 3vw;border-bottom:1px solid var(--poem-line);background:#f3eddfec;font-size:18px;letter-spacing:2px}.poem-back{display:flex;align-items:center;gap:9px;padding:8px 0}.poem-brand{font-size:20px;letter-spacing:3px}.poem-brand i{font-style:normal;color:#998d75;margin:0 10px}.poem-mode-switch{display:flex;gap:29px;flex-shrink:0}#poetry-reader .poem-mode-switch button{font-size:18px;letter-spacing:2px;padding:10px 0;border-bottom:1px solid transparent;color:#746b5b}#poetry-reader .poem-mode-switch button[aria-selected=true]{color:var(--poem-red);border-bottom-color:var(--poem-red)}
@@ -531,7 +654,7 @@ body:has(#sources.active)>footer{display:none}
 @media(max-width:700px){#poetry-reader .poem-sheet{padding:42px 30px}#poetry-reader .poem-sheet::after{inset:5px;border-width:48px;border-image-width:48px;opacity:.62}}
 
 /* v144: supplied Heavy Song outlines for titles; preserve body typography. */
-@font-face{font-family:HuangzhouTitleHeavy;src:url('./assets/paper-font-27.b10d0c644ed717df.woff2') format('woff2');font-weight:900;font-style:normal;font-display:swap}
+@font-face{font-family:HuangzhouTitleHeavy;src:url('./assets/paper-font-31.b10d0c644ed717df.woff2') format('woff2');font-weight:900;font-style:normal;font-display:swap}
 body :is(h1,h2,h3,h4,h5,h6),body .brand,body .brand-title,body .brand-city,body>header>nav button,body .poem-brand,body .evidence-place-name,body .tool-group-title,body .marker-name,body .atlas-place-label,#base .atlas-site>label{font-family:HuangzhouTitleHeavy,'STSong','Songti SC','SimSun',serif!important;font-weight:900!important;font-synthesis:none}
 /* Navigation stays within the existing header height and uses a clear vermilion rule. */
 body>header>nav{gap:18px;flex-wrap:nowrap}
