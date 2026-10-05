@@ -745,6 +745,24 @@ body:has(#sources.active)>footer{display:none}
 }
 @media(prefers-reduced-motion:reduce){#three .scene-dock,#three #place-detail{backdrop-filter:none}}
 
+/* A small paper control beside the ruin, using the existing scene palette. */
+#three .yuwang-memory-controls{padding:16px 0 13px;border-top:1px solid var(--scene-line);display:grid;grid-template-columns:1fr auto;gap:12px 10px;align-items:center}
+#three .yuwang-memory-controls h3{margin:0;font-size:21px;color:var(--scene-ink)}
+#three .yuwang-memory-toggle{border:1px solid #8b9b87;background:rgba(221,227,206,.35);padding:8px 13px;min-height:40px;font-size:17px;color:#344e42}
+#three .yuwang-memory-toggle[aria-pressed=true]{background:#536b5a;border-color:#536b5a;color:#f8f1dd}
+#three .yuwang-memory-toggle:disabled{opacity:.65}
+#three .yuwang-memory-strength{display:grid;grid-template-columns:auto minmax(60px,1fr) 3em;align-items:center;gap:10px;grid-column:1/-1;font-size:16px;letter-spacing:.04em}
+#three .yuwang-memory-strength input{width:100%;margin:0;accent-color:#61765f;min-height:24px}
+#three .yuwang-memory-strength output{text-align:right;font-variant-numeric:tabular-nums;font-size:14px}
+#three .yuwang-memory-controls p{grid-column:1/-1;margin:0;font-size:14px;line-height:1.6;color:#787865}
+@media(max-width:700px){#three .yuwang-memory-controls{padding-block:12px;gap:8px 10px}#three .yuwang-memory-controls h3{font-size:20px}}
+#three .yuwang-memory-quick{position:absolute;z-index:5;top:24px;left:28px;display:flex;align-items:center;padding:7px 9px;background:#f4eedf;border:1px solid #c6c6ad;box-shadow:0 3px 18px #4b54331c}
+#three .yuwang-memory-quick[hidden],#three:has(#place-detail.is-open) .yuwang-memory-quick{display:none}
+#three .yuwang-memory-quick button{min-height:36px;padding:6px 12px;font-size:17px;color:#465d4d;border:0;background:none}
+#three .yuwang-memory-quick .yuwang-memory-inspect{border-right:1px solid #cfceba;color:#3b5146}
+#three .yuwang-memory-quick button[aria-pressed=true]{color:#8c4f3a}
+@media(max-width:700px){#three .yuwang-memory-quick{top:15px;left:15px}#three .yuwang-memory-quick button{font-size:16px;padding-inline:9px}}
+
 @font-face{font-family:HuangzhouPoetrySong;src:url('./assets/paper-font-27.5b86c668b2736959.woff2') format('woff2');font-weight:300;font-style:normal;font-display:swap}
 @font-face{font-family:HuangzhouPoetrySong;src:url('./assets/paper-font-28.09b0a673f7cf640d.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
 #poetry-reader{--poem-ink:#2e413a;--poem-red:#8d4938;--poem-paper:#f3eddf;--poem-line:#91857138;position:fixed;inset:0;width:100%;max-width:none;height:100dvh;max-height:none;margin:0;padding:0;border:0;background:var(--poem-paper) url('./assets/paper-font-1.01c8c7b92eab1634.webp') repeat;color:var(--poem-ink);font-family:HuangzhouPoetrySong,'Songti SC',SimSun,serif;overflow:auto;overscroll-behavior:contain}
