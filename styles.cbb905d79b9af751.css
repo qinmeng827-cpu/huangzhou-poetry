@@ -529,3 +529,31 @@ body:has(#sources.active)>footer{display:none}
 @media(max-width:1400px){#poetry-reader .poem-sheet{padding-inline:40px}}
 @media(max-width:1100px){#poetry-reader .poem-sheet{padding-inline:32px}#poetry-reader .poem-sheet::after{border-width:52px;border-image-width:52px}}
 @media(max-width:700px){#poetry-reader .poem-sheet{padding:42px 30px}#poetry-reader .poem-sheet::after{inset:5px;border-width:48px;border-image-width:48px;opacity:.62}}
+
+/* v144: supplied Heavy Song outlines for titles; preserve body typography. */
+@font-face{font-family:HuangzhouTitleHeavy;src:url('./assets/paper-font-27.b10d0c644ed717df.woff2') format('woff2');font-weight:900;font-style:normal;font-display:swap}
+body :is(h1,h2,h3,h4,h5,h6),body .brand,body .brand-title,body .brand-city,body>header>nav button,body .poem-brand,body .evidence-place-name,body .tool-group-title,body .marker-name,body .atlas-place-label,#base .atlas-site>label{font-family:HuangzhouTitleHeavy,'STSong','Songti SC','SimSun',serif!important;font-weight:900!important;font-synthesis:none}
+/* Navigation stays within the existing header height and uses a clear vermilion rule. */
+body>header>nav{gap:18px;flex-wrap:nowrap}
+body>header>nav button{font-size:24px;line-height:1.25;letter-spacing:1px;min-height:50px;padding:10px 13px;gap:10px;white-space:nowrap;border-bottom:2px solid transparent;color:#465347;transition:color .2s ease,border-color .2s ease,background-color .2s ease}
+body>header>nav button .atlas-icon{width:24px;height:24px;flex:none}
+body>header>nav button[aria-pressed=true]{color:#934d36;border-bottom-color:#a76349}
+body>header>nav button:hover{color:#934d36;background:#ae755c0b}
+@media(max-width:1100px){
+ body>header>nav{gap:8px}
+ body>header>nav button{font-size:19px;min-height:46px;padding:9px 8px;gap:7px}
+ body>header>nav button .atlas-icon{width:21px;height:21px}
+}
+@media(max-width:850px){
+ body>header>nav{margin-top:4px;gap:8px;justify-content:space-between}
+ body>header>nav button{flex:1;justify-content:center;font-size:20px;min-height:44px;padding:8px 7px}
+}
+@media(max-width:480px){
+ body>header{height:136px}
+ .view{scroll-margin-top:136px}
+ #three .stage,#base,#sources{height:calc(100svh - 136px)}
+ body>header>nav{margin-top:4px;gap:3px}
+ body>header>nav button{font-size:clamp(14px,4.2vw,18px);letter-spacing:0;padding:7px 5px;gap:5px}
+ body>header>nav button .atlas-icon{width:18px;height:18px}
+}
+@media(prefers-reduced-motion:reduce){body>header>nav button{transition:none}}

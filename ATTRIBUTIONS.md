@@ -17,3 +17,5 @@
 
 - 地理参照与寻迹考证页的山水笺纸：2026-10-05 使用内置 image_gen 生成的项目装饰画，纸纹与淡墨山水在同一张图中生成，并非名作扫描或黄州地点的图像证据。v140 已撤下《白梅与禽》小画点景；旧版本 CC0 来源记录仍保留在 licenses/Song-album-v139-*。新山水笺纸的完整提示词、尺寸与哈希见 licenses/Folio-paper-v140-*。
 - 两页的正文宋体：Source Han Serif SC 2.003 / Adobe，SIL OFL 1.1；保留原字形，制作按页面字集裁减的 WOFF2，并将派生字体更名为 HuangzhouFolioSong。记录见 licenses/Folio-font-v139-sources.json。
+
+- 全站标题宋体：用户提供的 Source Han Serif CN Heavy（思源宋体 CN Heavy），Adobe，版本1.000、900字重，上传文件自带 SIL OFL 1.1 授权声明。网页保留原字形，裁减为 WOFF2，派生字体更名 HuangzhouTitleHeavy；原始 OTF 不进入发布包。许可与来源哈希见 licenses/Title-font-v144-*。
